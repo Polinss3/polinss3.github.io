@@ -1,0 +1,457 @@
+/* 
+Gama de colores
+  - 1º: #020202 / 2 2 2
+  - 2º: #19191a / 25 25 26
+  - 3º: #373739 / 55 55 57
+  - 4º: #60d4ea / 96 212 234  secundario
+  - 5º: #9ae5f3 / 154 229 243 secundario
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+@font-face {
+  font-family: "DroidSansMNerdFontMono-Regular";
+  src: url("DroidSansMNerdFontMono-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 16px;
+  font-family: "DroidSansMNerdFontMono-Regular";
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Start of header's code */
+header {
+  margin:auto auto;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+header {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url("../media/FotoP16_9.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+.contenido_header {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header h1 {
+  background-color: transparent;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+header p {
+  background-color: transparent;
+  font-size: 18px;
+}
+/* End nav bar's code */
+/* End of header's code */
+
+/* Inicio código de los iconos de redes sociales */
+.icons {
+  display: flex;
+  column-gap: 25px;
+}
+
+.icon {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #60d4ea;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+
+.icon:hover {
+  outline-offset: 4px;
+}
+
+.icon i {
+  margin: auto;
+}
+
+.icon:hover i {
+  animation: shake 0.5s;
+}
+
+.icon--instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #a02d76;
+}
+
+.icon--twitter:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #e0f3ff 0%,
+    #b7ddf5 10%,
+    #77c2f1 45%,
+    #1da1f2 60%,
+    #117dc0 90%
+  );
+  outline-color: #117dc0;
+}
+
+.icon--linkedin:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #6bd0ff 0%,
+    #48b8ec 5%,
+    #279fd7 45%,
+    #0e76a8 60%,
+    #07567a 90%
+  );
+  outline-color: #07567a;
+}
+
+.icon--github:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #bba0fb 0%,
+    #a486ec 5%,
+    #836bbd 45%,
+    #5d4a8d 60%,
+    #49396f 90%
+  );
+  outline-color: #49396f;
+}
+
+.icono {
+  margin: auto auto;
+  width: 20px;
+  height: 20px;
+}
+/* Final código de los iconos de redes sociales */
+
+body {
+  background-color: black;
+}
+
+/* Inicio seccion "sobre mi" */
+.sobre_mi {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
+  background-color: thistle;
+}
+
+.sobre_mi img {
+  margin: auto auto;
+  width: 90%;
+  height: auto;
+
+  grid-column: 1;
+  grid-row: 1/5;
+  border-radius: 16px 16px 16px 16px;
+}
+
+.sobre_mi h2 {
+  margin: auto auto;
+
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.sobre_mi p {
+  margin: auto auto;
+  width: 95%;
+  /* height: 95%; */
+
+  grid-column: 2;
+  grid-row: 2;
+
+  padding: 2%;
+
+  border: rgba(0, 0, 0, 0) 1px solid;
+}
+
+.sobre_mi nav ul {
+  grid-column: 2;
+  grid-row: 3;
+  margin: auto auto;
+
+  list-style: none;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.sobre_mi nav ul li {
+  cursor: pointer;
+}
+
+.resultado_nav{
+  grid-column: 2;
+  grid-row: 4;
+}
+/* Final sección "sobre mi" */
+
+/* Inicio sección "servicios" */
+.servicios {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.servicios h2 {
+  margin: auto auto;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.servicios_1{
+  margin: auto auto;
+  grid-column: 1;
+  grid-row: 2/3;
+
+  height: 90%;
+  width: 90%;
+  
+  background-color: #836bbd;
+}
+.servicios_2{
+  margin: auto auto;
+  grid-column: 2;
+  grid-row: 2;
+
+  height: 90%;
+  width: 90%;
+  
+  background-color: #836bbd;
+}
+.servicios_3{
+  margin: auto auto;
+  grid-column: 3;
+  grid-row: 2;
+  
+  height: 90%;
+  width: 90%;
+
+  background-color: #836bbd;
+}
+/* Final sección "servicios" */
+
+
+
+/* Inicio cuadro "proyectos realizados" */
+.proyectos {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+
+  background-color: #836bbd;
+
+}
+
+.proyectos h2 {
+  grid-column: 1/5;
+  grid-row: 1;
+
+  margin: auto auto;
+}
+
+/* Inicio código de la colección de proyectos */
+.gallery-wrap {
+  grid-column: 1/5;
+  grid-row: 2;
+
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 80%;
+  margin: auto auto;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.7s ease;
+}
+
+.item:hover {
+  flex: 7;
+}
+
+/* Inicio imagenes proyectos */
+.item-1 {
+  background-image: url("../media/github.png");
+}
+
+.item-2 {
+  background-image: url("../media/prov.png");
+}
+
+.item-3 {
+  background-image: url("../media/twitter.png");
+}
+
+.item-4 {
+  background-image: url("../media/linkedin.png");
+}
+
+.item-5 {
+  background-image: url("../media/instagram.png");
+}
+
+.item-6 {
+  background-image: url("../media/github.png");
+}
+
+.item-7 {
+  background-image: url("../media/prov.png");
+}
+
+.item-8 {
+  background-image: url("../media/instagram.png");
+}
+/* Fin imagenes proyectos */
+/* Final del código de la colección de proyectos */
+/* Final cuadro "proyectos realizados" */
+
+/* Start of section3 code */
+.seccion3 {
+  width: 30vw;
+  height: 30vw;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+
+  background: rgba(25, 25, 26, 1);
+  border-radius: 16px;
+  box-shadow: -5px -5px 15px rgba(55, 55, 57, 1) inset;
+}
+
+/* Inicio del código del footer */
+footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+footer h2 {
+  grid-column: 1;
+  grid-row: 1;
+
+  margin: auto auto;
+}
+.puntos_contacto{
+  grid-column: 1;
+  grid-row: 2;
+
+  margin: auto auto;
+  width: auto;
+  height: 70%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.email_telefono{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.imagen_mail_telefono{
+  border-radius: 6px;
+  width: 40px;
+  height: auto;
+}
+
+footer li{
+  list-style: none;
+}
+
+.informacion_usuario{
+  grid-column: 2;
+  grid-row: 1/3;
+
+  margin: auto auto;
+  width: 90%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+/* Final del código del footer */
