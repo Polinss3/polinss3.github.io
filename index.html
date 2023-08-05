@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="js/main.js"></script>
   </head>
 
   <body>
     <header>
       <!-- Aqui va una foto(fondo de header), el titulo (mi titulo), Nombre y breve presentacion -->
       <div class="contenido_header">
-        <h1>Mi Nombre</h1>
-        <p>Pequeña descripción sobre mí.</p>
+        <h1>Pablo Brasero Martínez</h1>
+        <p>Ingeniero informático</p>
       </div>
     </header>
 
@@ -23,22 +21,56 @@
       <section class="sobre_mi">
         <img src="media/FotoP2_1x1.jpg" alt="Foto personal" />
         <h2>¿Quién soy?</h2>
-        <p>Aqui va un breve resumen de quien soy</p>
+        <p>
+          Tengo 20 años y desde pequeño me ha apasionado la tecnología y todo lo
+          relacionado. Me encanta sentarme a programar tranquilamente mientra
+          escucho música con mis auriculares. Soy muy comprometido con las cosas
+          y si me propongo algo, seguramente lo consiga.
+        </p>
         <nav>
-          <ul>
-            <li id="sobre_mi_1"><h3>Habilidades</h3></li>
-            <li id="sobre_mi_3"><h3>Experiencia</h3></li>
-            <li id="sobre_mi_2"><h3>Educación</h3></li>
+          <ul class="list">
+            <li>
+              <a id="sobre_mi_1" class="link"><h3>Habilidades</h3></a>
+            </li>
+            <li>
+              <a id="sobre_mi_3" class="link"><h3>Experiencia</h3></a>
+            </li>
+            <li>
+              <a id="sobre_mi_2" class="link"><h3>Educación</h3></a>
+            </li>
           </ul>
         </nav>
-        <div class="resultado_nav"></div>
+        <div class="resultado_nav" id="resultado_nav"></div>
       </section>
 
       <section class="servicios">
         <h2>Servicios</h2>
-        <div class="servicios_1"></div>
-        <div class="servicios_2"></div>
-        <div class="servicios_3"></div>
+        <div class="secciones_servicios">
+          <div class="seccion_servicios">
+            <img
+              class="imagen_servicio"
+              src="media/terminal_icon_gris.png"
+              alt=""
+            />
+            <div class="titulo_servicio"><h1>Programmer</h1></div>
+          </div>
+          <div class="seccion_servicios">
+            <img
+              class="imagen_servicio"
+              src="media/frame_icon_gris.png"
+              alt=""
+            />
+            <div class="titulo_servicio"><h1>Web Developer</h1></div>
+          </div>
+          <div class="seccion_servicios">
+            <img
+              class="imagen_servicio"
+              src="media/ethernet_icon_gris.png"
+              alt=""
+            />
+            <div class="titulo_servicio"><h1>App Developer</h1></div>
+          </div>
+        </div>
       </section>
 
       <section class="proyectos">
@@ -68,15 +100,16 @@
     <footer>
       <h2>Contacto</h2>
       <div class="puntos_contacto">
-        
         <div class="email_telefono">
-          <img class="imagen_mail_telefono" src="media/mail_icon.png" alt=""><pre>  </pre>
+          <img class="imagen_mail_telefono" src="media/mail_icon.png" alt="" />
+          <pre></pre>
           <a href="mailto:pablobrasero@gmail.com" id="correo_contacto">
             pablobrasero@gmail.com
           </a>
         </div>
         <div class="email_telefono">
-          <img class="imagen_mail_telefono" src="media/phone_icon.png" alt=""><pre>  </pre>
+          <img class="imagen_mail_telefono" src="media/phone_icon.png" alt="" />
+          <pre></pre>
           <a href="mailto:pablobrasero@gmail.com" id="correo_contacto">
             +34 123 456 789
           </a>
@@ -115,6 +148,7 @@
             /></i>
           </a>
         </div>
+        <a href="media/CurrículumPabloBrasero.pdf" download class="boton_cv">Descargar CV</a>
       </div>
       <div class="informacion_usuario">
         <input type="text" id="nombre_usuario" />
@@ -122,5 +156,10 @@
         <input type="text" id="texto_usuario" />
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="anime.min.js"></script> -->
+
+    
   </body>
 </html>
