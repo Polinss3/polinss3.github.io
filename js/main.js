@@ -4,11 +4,11 @@ const educación = document.getElementById("sobre_mi_2");
 const resultadoNav = document.getElementById("resultado_nav");
 
 habilidades.addEventListener("click", () => {
-  resultadoNav.innerHTML = "<ul><li><p>Mis habilidades son las siguientes</p></li></ul>";
+  resultadoNav.innerHTML = "<ul><li><p>Programacion en multiples lenguajes</p></li><li><p>Desarrollo de proyectos</p></li><li><p>Trabajo en equipo</p></li></ul>";
 });
 
 experiencia.addEventListener("click", () => {
-  resultadoNav.innerHTML = "<ul><li><p>Mis experiencias son las siguientes</p></li></ul>";
+  resultadoNav.innerHTML = "<ul><li><p>Mi experiencia son las siguientes</p></li></ul>";
 });
 
 educación.addEventListener("click", () => {
