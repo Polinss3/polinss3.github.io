@@ -312,35 +312,37 @@ body {
   align-items: center;
 }
 
+/* ------------------------------------------------------------------ */
 .seccion_servicios {
+  display: inline-block;
+  position: relative;
+  transition: transform 1s;
   height: 450px;
   width: 450px;
   background-color: #19191a;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.seccion_servicios:hover h1 ~ img {
-  background-color: #000;
-  width: 200px; /*O lo que quieras*/
-  height: 200px; /*O lo que quieras*/
 }
 
 .imagen_servicio {
-  grid-column: 1;
-  grid-row: 1;
-  margin: auto auto;
   width: 50%;
-  height: auto;
+  max-width: 100%;
+  transition: width 0.3s;
 }
 
 .titulo_servicio {
-  grid-column: 1/3;
-  grid-row: 2;
-  margin: auto auto;
+  text-align: center;
+  margin-top: 25%;
+  transition: font-size 0.3s;
 }
+
+/* Estilo al hacer hover sobre la sección de servicios */
+.seccion_servicios:hover .imagen_servicio {
+  width: 52%;
+}
+
+.seccion_servicios:hover .titulo_servicio {
+  font-size: 120%;
+}
+/* ----------------------------------------------------------------------- */
 
 /* Final sección "servicios" */
 
@@ -506,6 +508,10 @@ footer li {
   align-items: center;
 }
 /* Final del código del footer */
+
+/* Estilo predeterminado para la sección de servicios */
+
+
 
 @media (max-width: 425px) {
   /* Inicio código del header */
